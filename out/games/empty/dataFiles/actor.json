@@ -1,0 +1,14 @@
+{
+  "actor_condition": {
+    "wound_incarnation_v": "0.0035",
+    "satiety_health_v": "0.0001",
+    "satiety_power_v": "0.2",
+    "satiety_v": "0.000002",
+    "radiation_v": "0.0001",
+    "radio_zone_max_power": "0.055",
+    "fire_zone_max_power": "1.15",
+    "acid_zone_max_power": "0.25",
+    "psi_zone_max_power": "0.25",
+    "electra_zone_max_power": "4.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "additional_weight": {
+    "magnitude": "1",
+    "unit_str": "st_kg"
+  },
+  "bleeding_restore_speed": {
+    "magnitude": "1000"
+  },
+  "burn_immunity": {
+    "magnitude": "100"
+  },
+  "chemical_burn_immunity": {
+    "magnitude": "100"
+  },
+  "health_restore_speed": {
+    "magnitude": "1000"
+  },
+  "power_restore_speed": {
+    "magnitude": "1000"
+  },
+  "radiation_immunity": {
+    "magnitude": "100"
+  },
+  "radiation_restore_speed": {
+    "magnitude": "1000",
+    "sign_inverse": "1"
+  },
+  "satiety_restore_speed": {
+    "magnitude": "1000"
+  },
+  "shock_immunity": {
+    "magnitude": "100"
+  },
+  "telepatic_immunity": {
+    "magnitude": "100"
+  }
+}

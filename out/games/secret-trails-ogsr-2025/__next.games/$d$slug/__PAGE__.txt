@@ -1,0 +1,70 @@
+1:"$Sreact.fragment"
+2:I[42258,["/stalker-artifacts-staging/_next/static/chunks/c1f0e6299dc68e98.js","/stalker-artifacts-staging/_next/static/chunks/a762dfc2d333f793.js","/stalker-artifacts-staging/_next/static/chunks/02f4ad89b0b4372e.js","/stalker-artifacts-staging/_next/static/chunks/3ad6b44edaf37ade.js","/stalker-artifacts-staging/_next/static/chunks/f85f4fcd876568f1.js","/stalker-artifacts-staging/_next/static/chunks/d406ac9a2ebb1418.js","/stalker-artifacts-staging/_next/static/chunks/726e1115115a9e38.js"],"default"]
+8:I[97367,["/stalker-artifacts-staging/_next/static/chunks/ff1a16fafef87110.js","/stalker-artifacts-staging/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T557,/* Стили специфичные для Secret Trails OGSR */
+
+/* Font-face для этой страницы */
+@font-face {
+  font-family: 'Bender';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Bender'),
+    url('../../fonts/Bender/Bender-Light.woff2') format('woff2');
+}
+
+.page-background {
+  /* position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100dvh;
+  object-fit: cover;*/
+  filter: blur(5px) saturate(50%) brightness(50%) !important;
+}
+
+/* Scoped стили через класс контейнера страницы */
+.pageContainer {
+  --font-family-secret-trails: 'Bender', sans-serif;
+  --color-text-accent: #ffa500;
+  --color-receipt: var(--color-text-accent);
+  position: relative;
+
+  /* background: linear-gradient(135deg, #424344 0%, #0a0b09 100%); */
+  .custom-font {
+    font-family: var(--font-family-secret-trails);
+    letter-spacing: 1px;
+    font-weight: inherit;
+  }
+
+  .settings-bar {
+    font-size: 16px;
+  }
+
+  .stalker-select-container,
+  .form-control {
+    font-weight: 600;
+    letter-spacing: 2px
+  }
+
+  .ac-receipt .accordion-title {
+    color: var(--color-receipt);
+  }
+
+  /* .stat-name {
+    color: #f3f3f3;
+  } */
+}
+
+
+@-moz-document url-prefix() {
+  select {
+    background-color: var(--color-bg-form-control-dark) !important;
+  }
+}0:{"buildId":"fdIFkiWr5BrDnja0KWo9k","rsc":["$","$1","c",{"children":[["$","$L2",null,{"metadata":{"order":1,"title":"gameTitleSecretTrailsOgsr2025","description":"gameDescriptionSecretTrailsOgsr2025","meta":{"title":"Артефакты | Сталкер Secret Trails OGSR","description":"Все артефакты их характеристики из модификации Secret Trails OGSR на Stalker"},"tags":["mod",2025],"dataFiles":{"artifacts":["https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/misc/items/artefacts.ltx","https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/misc/items/artefacts_amk.ltx"],"strings":{"ru":["https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/text/rus/enc/string_table_enc_arts.xml","https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/text/rus/enc/string_table_enc_items.xml","https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/text/rus/others/amk_strings.xml"],"en":["https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/text/eng/enc/string_table_enc_arts.xml","https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/text/eng/enc/string_table_enc_items.xml","https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/text/eng/others/amk_strings.xml"]},"actor":["https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/creatures/actor.ltx"],"recipes":["https://raw.githubusercontent.com/I-AmDead/Secret-Trails/refs/heads/main/gamedata/config/gameplay/articles/encyclopedia_amk_recipts.xml"]},"mod":"socFamily immunityOne unitsAllPercent roundValue","authorLinks":[{"href":"https://ap-pro.ru/forums/topic/820-secret-trails/","name":"AP-PRO.RU","img":{"src":"/img/ap-pro.png","alt":"AP-PRO.RU","height":30,"width":72}},{"href":"https://www.amk-team.ru/forum/topic/14095-secret-trails-%D1%82%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5-%D1%82%D1%80%D0%BE%D0%BF%D1%8B-ogsr-engine/","name":"amk-team.ru","img":{"src":"/img/amk-team.png","alt":"amk-team.ru","height":30,"width":53}},{"href":"https://discord.gg/kUGMPqyEJ","name":"Discord Secret Trails OGSR 2025","svg":{"name":"FaDiscord","size":"25px"}},{"href":"https://github.com/I-AmDead/Secret-Trails","name":"GitHub Secret Trails OGSR 2025","svg":{"name":"FaGithub","size":"25px"}}],"background":{"video":{"poster":"wavy_grass_preview.webp","sources":[{"src":"wavy_grass.webm","type":"video/webm"},{"src":"wavy_grass.mp4","type":"video/mp4"}]}},"font":"bender","slug":"secret-trails-ogsr-2025"},"styles":"$3"}],["$L4","$L5","$L6"],"$L7"]}],"loading":null,"isPartial":false}
+4:["$","script","script-0",{"src":"/stalker-artifacts-staging/_next/static/chunks/f85f4fcd876568f1.js","async":true}]
+5:["$","script","script-1",{"src":"/stalker-artifacts-staging/_next/static/chunks/d406ac9a2ebb1418.js","async":true}]
+6:["$","script","script-2",{"src":"/stalker-artifacts-staging/_next/static/chunks/726e1115115a9e38.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

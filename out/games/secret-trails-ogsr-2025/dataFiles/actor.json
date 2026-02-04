@@ -1,0 +1,466 @@
+{
+  "actor": {
+    "$ed_icon": "ed\\ed_actor",
+    "$player": "on",
+    "cform": "skeleton",
+    "class": "O_ACTOR",
+    "money": "40",
+    "rank": "3",
+    "script_binding": "bind_stalker.actor_init",
+    "visual": "actors\\hero\\stalker_no_outfit.ogf",
+    "destroyed_vis_name": "physics\\Dead_Body\\skelet_crash",
+    "terrain": "actor_terrain",
+    "max_item_mass": "80",
+    "jump_speed": "8.1",
+    "crouch_coef": "0.45",
+    "climb_coef": "0.7",
+    "run_coef": "1.8",
+    "sprint_koef": "2.5",
+    "run_back_coef": "1.8",
+    "walk_back_coef": "0.8",
+    "air_control_param": "0.1",
+    "walk_accel": "17",
+    "pickup_info_radius": "5",
+    "ef_creature_type": "17",
+    "attachable_items": "device_torch, attachable_item, hand_radio",
+    "ph_box0_center": "0.0, 0.92, 0.0",
+    "ph_box0_size": "0.35, 0.92, 0.35",
+    "ph_box1_center": "0.0, 0.58, 0.0",
+    "ph_box1_size": "0.35, 0.58, 0.35",
+    "ph_box2_center": "0.0, 0.43, 0.0",
+    "ph_box2_size": "0.35, 0.43, 0.35",
+    "stalker_restrictor_radius": ".05",
+    "stalker_small_restrictor_radius": ".05",
+    "medium_monster_restrictor_radius": "0.1",
+    "ph_crash_speed_min": "14",
+    "ph_crash_speed_max": "30",
+    "ph_collision_damage_factor": "1.0",
+    "ph_mass": "80",
+    "weapon_bone0": "bip01_r_finger1",
+    "weapon_bone1": "bip01_l_finger1",
+    "weapon_bone2": "bip01_r_finger11",
+    "damage": "actor_damage",
+    "hit_probability_gd_novice": "0.20",
+    "hit_probability_gd_stalker": "0.30",
+    "hit_probability_gd_veteran": "0.40",
+    "hit_probability_gd_master": "0.50",
+    "hit_sounds": "actor_hit_snds",
+    "immunities_sect": "actor_immunities_gd_master",
+    "condition_sect": "actor_condition",
+    "heavy_breath_snd": "actor\\breath_1",
+    "heavy_blood_snd": "affects\\heartbeat",
+    "jump_snd": "actor\\jump_default",
+    "material": "creatures\\actor",
+    "camera_height_factor": "0.92",
+    "disp_base": "0.51",
+    "disp_aim": "0.04",
+    "disp_vel_factor": "1.0",
+    "disp_accel_factor": "2.0",
+    "disp_crouch_factor": "-0.3",
+    "disp_crouch_no_acc_factor": "-0.6",
+    "missile_throw_offset": "0.3, 0.5, 0.5",
+    "body_remove_time": "30000",
+    "sleep_time_factor": "1000",
+    "max_sleep_hours": "12",
+    "species": "actor",
+    "LegsCount": "2",
+    "step_params": "stalker_step_manager",
+    "foot_bones": "stalker_foot_bones",
+    "memory_update_time": "100",
+    "DynamicObjectsCount": "32",
+    "min_view_distance": "1.0",
+    "max_view_distance": "1.0",
+    "visibility_threshold": "1.0",
+    "always_visible_distance": "1.0",
+    "time_quant": "0.005",
+    "decrease_value": "0.1",
+    "velocity_factor": "0.5",
+    "luminocity_factor": "0.5",
+    "transparency_threshold": "0.4",
+    "still_visible_time": "5000"
+  },
+  "actor_animation": {
+    "fwd_l_strafe_yaw": "45",
+    "back_l_strafe_yaw": "45",
+    "fwd_r_strafe_yaw": "45",
+    "back_r_strafe_yaw": "45",
+    "l_strafe_yaw": "0",
+    "r_strafe_yaw": "0"
+  },
+  "actor_condition": {
+    "satiety_v": "0.000002",
+    "satiety_light_limit": "0.6666",
+    "satiety_critical_limit": "0.3333",
+    "satiety_power_v": "0.000055",
+    "satiety_health_v": "0.0001",
+    "satiety_critical": "0.0",
+    "psy_health_v": "0.008",
+    "alcohol_v": "-0.0003",
+    "health_hit_part": "1.0",
+    "health_fire_wound_hit_part": "0.5",
+    "power_hit_part": "0.1",
+    "max_power_leak_speed": "0.0",
+    "max_walk_weight": "110",
+    "bleeding_v": "0.0035",
+    "wound_incarnation_v": "0.0004",
+    "min_wound_size": "0.0078",
+    "jump_power": "0.01",
+    "jump_weight_power": "0.05",
+    "overweight_jump_k": "1",
+    "stand_power": "-0.005",
+    "walk_power": "0.00001",
+    "walk_weight_power": "0.00005",
+    "overweight_walk_k": "1",
+    "accel_k": "3",
+    "sprint_k": "75",
+    "limping_health_begin": "0.1",
+    "limping_health_end": "0.2",
+    "limping_power_begin": "0.1",
+    "limping_power_end": "0.2",
+    "use_limping_state": "on",
+    "cant_walk_power_begin": "0.01",
+    "cant_walk_power_end": "0.10",
+    "cant_sprint_power_begin": "0.20",
+    "cant_sprint_power_end": "0.30",
+    "max_sleep_hours": "12",
+    "radiation_v": "0.0001",
+    "radiation_health_v": "0.002",
+    "radiation_power_v": "0.002",
+    "radiation_max_power_k": "0.7",
+    "radiation_max_health_k": "0.8",
+    "radiation_light_limit": "0.4",
+    "radiation_critical_limit": "0.6",
+    "radiation_scale": "0.5"
+  },
+  "actor_damage": {
+    "default": "1.0, -1, 1.0",
+    "bip01_pelvis": "1.0, 10, 1.5",
+    "bip01_spine": "1.0, 10, 1.5",
+    "bip01_spine1": "1.0, 0, 1.5",
+    "bip01_spine2": "1.0, 0, 1.5",
+    "bip01_neck": "1.0, 0, 1.5",
+    "bip01_head": "0.2, 0, 1.5",
+    "eyelid_1": "0.0, 0, 0.0",
+    "eye_left": "0.0, 0, 0.0",
+    "eye_right": "0.0, 0, 0.0",
+    "jaw_1": "0.0, 0, 0.0",
+    "bip01_l_clavicle": "1.0, 4, 1.5",
+    "bip01_l_upperarm": "1.0, 4, 1.5",
+    "bip01_l_forearm": "1.0, 4, 1.5",
+    "bip01_l_hand": "1.0, 4, 0.5",
+    "bip01_l_finger0": "0.0, 4, 0.0",
+    "bip01_l_finger01": "0.0, 4, 0.0",
+    "bip01_l_finger02": "0.0, 4, 0.0",
+    "bip01_l_finger1": "0.0, 4, 0.0",
+    "bip01_l_finger11": "0.0, 4, 0.0",
+    "bip01_l_finger12": "0.0, 4, 0.0",
+    "bip01_l_finger2": "0.0, 4, 0.0",
+    "bip01_l_finger21": "0.0, 4, 0.0",
+    "bip01_l_finger22": "0.0, 4, 0.0",
+    "bip01_r_clavicle": "1.0, 2, 1.5",
+    "bip01_r_upperarm": "1.0, 2, 1.5",
+    "bip01_r_forearm": "1.0, 2, 1.5",
+    "bip01_r_hand": "1.0, 2, 0.0",
+    "bip01_r_finger0": "0.0, 2, 0.0",
+    "bip01_r_finger01": "0.0, 2, 0.0",
+    "bip01_r_finger02": "0.0, 2, 0.0",
+    "bip01_r_finger1": "0.0, 2, 0.0",
+    "bip01_r_finger11": "0.0, 2, 0.0",
+    "bip01_r_finger12": "0.0, 2, 0.0",
+    "bip01_r_finger2": "0.0, 2, 0.0",
+    "bip01_r_finger21": "0.0, 2, 0.0",
+    "bip01_r_finger22": "0.0, 2, 0.0",
+    "bip01_l_thigh": "1.0, 8, 1.5",
+    "bip01_l_calf": "1.0, 8, 1.5",
+    "bip01_l_foot": "1.0, 8, 1.5",
+    "bip01_l_toe0": "1.0, 8, 1.5",
+    "bip01_r_thigh": "1.0, 6, 1.5",
+    "bip01_r_calf": "1.0, 6, 1.5",
+    "bip01_r_foot": "1.0, 6, 1.5",
+    "bip01_r_toe0": "1.0, 6, 1.5"
+  },
+  "actor_hit_snds": {
+    "burn": "actor\\burn1, actor\\burn2, actor\\burn3",
+    "shock": "actor\\fall_1, actor\\fall_2, actor\\fall_3",
+    "strike": "actor\\fall_1, actor\\fall_2, actor\\fall_3",
+    "wound": "actor\\fall_1, actor\\fall_2, actor\\fall_3",
+    "radiation": "monsters\\biting\\def_0",
+    "telepatic": "actor\\pain1, actor\\pain2, actor\\pain3",
+    "fire_wound": "actor\\bullet_hit_1, actor\\bullet_hit_2, actor\\bullet_hit_3, actor\\bullet_hit_4",
+    "chemical_burn": "actor\\pain1, actor\\pain2, actor\\pain3",
+    "explosion": "affects\\tinnitus3a",
+    "wound_2": "actor\\hurt1, actor\\hurt2, actor\\hurt3, actor\\hurt4",
+    "physic_strike": "actor\\pain1, actor\\pain2, actor\\pain3",
+    "fire": "affects\\tinnitus3a"
+  },
+  "actor_hud": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_01",
+    "position": "-0.044000, -0.156000, 0.100000",
+    "orientation": "-0.500000, 1.000000, -2.000000",
+    "ancor_0": "lead_gun",
+    "ancor_1": "l_hand",
+    "watch_visual": "anomaly_weapons\\hands\\watch",
+    "watch_bone": "l_forearm_twist",
+    "watch_pos": "-0.027446, -0.000548, 0.000925",
+    "watch_rot": "87.135376, 1.059952, 112.208755",
+    "watch_scale": "0.792001",
+    "watch_attach_offset": "0.0, 0.0, 0.0",
+    "watch_omni_attach_offset": "0.0, 0.0, 0.0",
+    "watchlight_section": "watchlight_definition",
+    "watch_light_bone": "screen"
+  },
+  "actor_hud_05": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_no_outfit",
+    "watch_pos": "-0.003446,0.009202,0.002125",
+    "watch_rot": "90.735321,4.299956,112.208755",
+    "watch_scale": "0.954"
+  },
+  "actor_hud_bandit_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_exo"
+  },
+  "actor_hud_bandit_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_nbc_suit"
+  },
+  "actor_hud_bandit_novice": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_novice",
+    "watch_pos": "0.003154,0.003652,-0.002275",
+    "watch_rot": "89.646622,3.379901,111.968750",
+    "watch_scale": "0.954"
+  },
+  "actor_hud_bandit_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_seva"
+  },
+  "actor_hud_bandit_skat9": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_skat9",
+    "watch_pos": "-0.016146,-0.000248,0.001825",
+    "watch_rot": "92.056427,2.259952,112.208755",
+    "watch_scale": "1.064"
+  },
+  "actor_hud_bandit_sun": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_sun"
+  },
+  "actor_hud_broken_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_exo"
+  },
+  "actor_hud_cs3a": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_cs3a",
+    "watch_pos": "-0.007446,0.008952,-0.002075",
+    "watch_rot": "95.077072,2.089951,107.267700",
+    "watch_scale": "0.874"
+  },
+  "actor_hud_cs3b": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_cs3b"
+  },
+  "actor_hud_cs_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_cs_exo"
+  },
+  "actor_hud_cs_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_cs_nbc_suit"
+  },
+  "actor_hud_cs_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_cs_seva"
+  },
+  "actor_hud_dolg_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_dolg_exo"
+  },
+  "actor_hud_duty_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_duty_nbc_suit"
+  },
+  "actor_hud_duty_ps5m": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_duty_ps5m",
+    "watch_pos": "0.011754, 0.005852, -0.002075",
+    "watch_rot": "87.135376, 9.080041, 112.208755",
+    "watch_scale": "0.986"
+  },
+  "actor_hud_duty_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_duty_seva"
+  },
+  "actor_hud_ecolog_blue_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_ecolog_blue"
+  },
+  "actor_hud_ecolog_green_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_ecolog_green"
+  },
+  "actor_hud_ecolog_red_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_ecolog_red"
+  },
+  "actor_hud_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_exo",
+    "watch_pos": "-0.010146,0.004152,0.000525",
+    "watch_rot": "93.376709,4.069951,109.988281",
+    "watch_scale": "0.872"
+  },
+  "actor_hud_freedom_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_exo"
+  },
+  "actor_hud_freedom_guard": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_guard",
+    "watch_pos": "-0.018046, 0.008452, -0.003275",
+    "watch_rot": "82.135452, 3.159951, 111.808762",
+    "watch_scale": "1.15"
+  },
+  "actor_hud_freedom_guardian": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_guardian",
+    "watch_pos": "-0.006946,0.003552,-0.002875",
+    "watch_rot": "92.155350,3.139951,112.208755",
+    "watch_scale": "1.022"
+  },
+  "actor_hud_freedom_metro": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_metro"
+  },
+  "actor_hud_freedom_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_nbc_suit"
+  },
+  "actor_hud_freedom_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_seva"
+  },
+  "actor_hud_freedom_wind": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_freedom_wind"
+  },
+  "actor_hud_loner_metro": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_loner_metro"
+  },
+  "actor_hud_loner_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_loner_nbc_suit"
+  },
+  "actor_hud_loner_novice": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_loner_novice",
+    "watch_pos": "0.005154,0.006152,-0.003075",
+    "watch_rot": "88.335358,8.880075,111.008774",
+    "watch_scale": "1.016"
+  },
+  "actor_hud_loner_predator": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_bandit_merc",
+    "watch_pos": "-0.009596,0.003002,0.000025",
+    "watch_rot": "90.796158,2.979950,111.637535",
+    "watch_scale": "1.022"
+  },
+  "actor_hud_loner_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_loner_seva"
+  },
+  "actor_hud_loner_sunrise": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_loner_sunrise",
+    "watch_pos": "-0.001346,0.004352,0.001925",
+    "watch_rot": "89.335342,6.559948,112.208755",
+    "watch_scale": "0.986"
+  },
+  "actor_hud_merc_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_merc_exo"
+  },
+  "actor_hud_merc_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_merc_nbc_suit"
+  },
+  "actor_hud_merc_novice": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_merc_novice",
+    "watch_pos": "-0.006946,0.005152,-0.002875",
+    "watch_rot": "92.755478,3.159951,112.208755",
+    "watch_scale": "1.054"
+  },
+  "actor_hud_merc_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_merc_seva"
+  },
+  "actor_hud_merc_sun": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_merc_sun"
+  },
+  "actor_hud_metro": {
+    "watch_pos": "-0.014746,-0.008248,-0.004675",
+    "watch_rot": "88.305626,1.549952,112.058723",
+    "watch_scale": "1.012"
+  },
+  "actor_hud_military": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_military_berill",
+    "watch_pos": "-0.009346,0.004252,-0.003275",
+    "watch_rot": "93.466728,0.379954,112.208755",
+    "watch_scale": "0.912"
+  },
+  "actor_hud_monolith_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_monolith_exo"
+  },
+  "actor_hud_monolith_nbc": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_monolith_nbc_suit"
+  },
+  "actor_hud_monolith_seva": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_monolith_seva"
+  },
+  "actor_hud_monolith_suit": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_monolith_suit",
+    "watch_pos": "0.010354,0.003252,0.000125",
+    "watch_rot": "92.206390,7.330086,112.208755",
+    "watch_scale": "0.956"
+  },
+  "actor_hud_monolith_suit_black": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_monolith_suit_black",
+    "watch_pos": "-0.008446,0.006652,-0.002775",
+    "watch_rot": "89.055717,2.940011,112.208755",
+    "watch_scale": "1.132"
+  },
+  "actor_hud_nano_exo": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_nano_exo"
+  },
+  "actor_hud_nbc": {
+    "watch_pos": "0.006154,0.002352,-0.000975",
+    "watch_rot": "91.546410,10.500184,110.528259",
+    "watch_scale": "0.972"
+  },
+  "actor_hud_nomad": {
+    "visual": "anomaly_weapons\\hands\\wpn_hand_nomad",
+    "watch_pos": "-0.009346,0.004252,-0.003275",
+    "watch_rot": "93.466728,0.379954,112.208755",
+    "watch_scale": "0.912"
+  },
+  "actor_hud_scientific_base": {
+    "watch_pos": "-0.002846,0.002652,-0.001675",
+    "watch_rot": "93.546745,5.099974,107.267700",
+    "watch_scale": "0.926"
+  },
+  "actor_immunities_gd_master": {
+    "burn_immunity": "1.0",
+    "strike_immunity": "1.0",
+    "shock_immunity": "1.0",
+    "wound_immunity": "1.0",
+    "radiation_immunity": "1.0",
+    "telepatic_immunity": "1.0",
+    "chemical_burn_immunity": "1.0",
+    "explosion_immunity": "1.0",
+    "fire_wound_immunity": "1.0"
+  },
+  "actor_immunities_gd_novice": {
+    "burn_immunity": "0.5",
+    "strike_immunity": "0.5",
+    "shock_immunity": "0.5",
+    "wound_immunity": "0.5",
+    "radiation_immunity": "1.0",
+    "telepatic_immunity": "0.5",
+    "chemical_burn_immunity": "0.5",
+    "explosion_immunity": "0.1",
+    "fire_wound_immunity": "0.5"
+  },
+  "actor_immunities_gd_stalker": {
+    "burn_immunity": "0.65",
+    "strike_immunity": "0.65",
+    "shock_immunity": "0.65",
+    "wound_immunity": "0.65",
+    "radiation_immunity": "1.0",
+    "telepatic_immunity": "0.65",
+    "chemical_burn_immunity": "0.65",
+    "explosion_immunity": "0.3",
+    "fire_wound_immunity": "0.65"
+  },
+  "actor_immunities_gd_veteran": {
+    "burn_immunity": "0.8",
+    "strike_immunity": "0.8",
+    "shock_immunity": "0.8",
+    "wound_immunity": "0.8",
+    "radiation_immunity": "1.0",
+    "telepatic_immunity": "0.8",
+    "chemical_burn_immunity": "0.8",
+    "explosion_immunity": "0.6",
+    "fire_wound_immunity": "0.8"
+  },
+  "actor_terrain": {},
+  "watchlight_definition": {
+    "omni_type": "1",
+    "omni_range": "0.35",
+    "omni_color": "2.52, 0.55, 0.55, 0.2"
+  }
+}

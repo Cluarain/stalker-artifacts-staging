@@ -1,0 +1,52 @@
+{
+  "additional_weight": {
+    "magnitude": "1",
+    "unit_str": "st_kg"
+  },
+  "bleeding_restore_speed": {
+    "magnitude": "1000"
+  },
+  "burn_immunity": {
+    "magnitude": "30"
+  },
+  "chemical_burn_immunity": {
+    "magnitude": "30"
+  },
+  "condition": {
+    "magnitude": "100"
+  },
+  "explosion_immunity": {
+    "magnitude": "100"
+  },
+  "fire_wound_immunity": {
+    "magnitude": "100"
+  },
+  "health_restore_speed": {
+    "magnitude": "6600"
+  },
+  "power_restore_speed": {
+    "magnitude": "2000"
+  },
+  "radiation_immunity": {
+    "magnitude": "30"
+  },
+  "radiation_restore_speed": {
+    "magnitude": "1000",
+    "sign_inverse": "1"
+  },
+  "satiety_restore_speed": {
+    "magnitude": "10"
+  },
+  "shock_immunity": {
+    "magnitude": "48"
+  },
+  "strike_immunity": {
+    "magnitude": "100"
+  },
+  "telepatic_immunity": {
+    "magnitude": "30"
+  },
+  "wound_immunity": {
+    "magnitude": "100"
+  }
+}
