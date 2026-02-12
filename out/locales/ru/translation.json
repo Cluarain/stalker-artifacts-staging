@@ -14,8 +14,7 @@
     "findError": "Нашли ошибку?",
     "contactMe": "Свяжитесь со мной",
     "totalArtifactsCountText": "Всего артефактов",
-
-
+    "allStatsFromConfigs": "Все статы из конфигов",
     
     "visual": "Визуал",
     "inv_name": "Имя",
@@ -29,6 +28,7 @@
     "trail_light_color": "Цвет подсветки артефакта",
     "trail_light_range": "Дальность подсветки артефакта",
     "additional_inventory_weight": "Грузоподъёмность",
+    "ui_inv_outfit_additional_weight": "Грузоподъёмность",
     "particles": "Частицы артефакта",
     "health_restore_speed": "Здоровье",
     "radiation_restore_speed": "Радиация",
@@ -71,8 +71,8 @@
     "gameDescriptionClearSky2008": "Все артефакты и их характеристики из оригинальной игры S.T.A.L.K.E.R.: Чистое небо",
     "gameTitleGamma094": "GAMMA 0.9.4",
     "gameDescriptionGamma094": "В разработке...",
-    "gameTitleSecretTrailsOgsr2025": "Secret Trails OGSR",
-    "gameDescriptionSecretTrailsOgsr2025": "Все артефакты и их характеристики из модификации Тайные Тропы OGSR",
+    "gameTitleSecretTrailsOgsr2025": "Тайные Тропы OGSR",
+    "gameDescriptionSecretTrailsOgsr2025": "Все артефакты и их характеристики из модификации Secret Trails OGSR",
     "gameTitleShadowOfChernobyl2007": "Тень Чернобыля",
     "gameDescriptionShadowOfChernobyl2007": "Все артефакты и их характеристики из оригинальной игры S.T.A.L.K.E.R.: Тень Чернобыля",
     "calculatorPageHeader": "Калькулятор артефактов",
@@ -93,7 +93,7 @@
     "modInputLabel": "Модификатор (mod)",
     "artifactStatsInputLabel": "Статы артефакта (один параметр на строку в формате \"ключ = значение\"):",
     "recognizedParamsCount": "Распознано параметров: ",
-
+    
     
     "formatErrorsTitle": "Ошибки формата:",
     "duplicateWarningsTitle": "Предупреждения (дубликаты):",

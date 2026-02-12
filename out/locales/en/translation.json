@@ -15,7 +15,7 @@
     "contactMe": "Contact me",
     "totalArtifactsCountText": "Total artifacts",
     "visual": "Visual",
-    "inv_name": "Inventory name",
+    "inv_name": "Name",
     "inv_name_short": "Inventory name short",
     "inv_weight": "Weight",
     "inv_grid_x": "Texture position X",
@@ -25,8 +25,12 @@
     "lights_enabled": "Artifact lights",
     "trail_light_color": "Artifact lights color",
     "trail_light_range": "Artifact lights range",
-    "additional_inventory_weight": "Load capacity",
+    "additional_inventory_weight": "Max weight",
+    "ui_inv_outfit_additional_weight": "Max weight",
     "particles": "Artifact particles",
+    "allStatsFromConfigs": "All stats from configs",
+
+
     "health_restore_speed": "Health",
     "radiation_restore_speed": "Radiation",
     "satiety_restore_speed": "Satiety",
